@@ -6,15 +6,14 @@
 
     <groupId>github.cotra</groupId>
     <artifactId>cotra-cloud</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <modules>
-        <!--<module>utils-demo</module>-->
-    </modules>
-    <packaging>pom</packaging>
-
+    <version>0.0.1-SNAPSHOT</version>
     <name>cotra-cloud-starter</name>
     <description>cotra cloud demo</description>
-    <url>https://github.com/cotra/Spring-Cloud-Demo</url>
+
+    <modules>
+        <module>eureka-server</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -26,16 +25,17 @@
     <properties>
         <java.version>1.8</java.version>
         <hutool.version>4.4.3</hutool.version>
-        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <spring-cloud.version>Greenwich.RELEASE</spring-cloud.version>
     </properties>
 
     <dependencies>
+        <!-- starter-test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- hutool工具类 -->
+        <!-- hutool -->
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
