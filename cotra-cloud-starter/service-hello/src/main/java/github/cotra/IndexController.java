@@ -11,7 +11,12 @@ public class IndexController {
     String port;
 
     @GetMapping("/hello")
-    public String home() {
-        return "hi " + "i am from port:" + port;
+    public String index() {
+        return "service-hello is running";
+    }
+
+    @GetMapping("/hello")
+    public String hello() {
+        return "hello " + "i am from port:" + port;
     }
 }
