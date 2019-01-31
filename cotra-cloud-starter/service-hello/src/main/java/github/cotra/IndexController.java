@@ -10,7 +10,7 @@ public class IndexController {
     @Value("${server.port}")
     String port;
 
-    @GetMapping("/hello")
+    @GetMapping("/")
     public String index() {
         return "service-hello is running";
     }
